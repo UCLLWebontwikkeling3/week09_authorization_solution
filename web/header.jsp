@@ -6,9 +6,9 @@
 	<nav>
 		<ul>
 			<li><a href="Controller">Home</a></li>
-			<li><a href="Controller?action=everyone">Everyone</a></li>
-			<li><a href="Controller?action=admin">Admin</a></li>
-			<li><a href="Controller?action=allRoles">All Roles</a></li>
+			<li><a href="Controller?action=Everyone">Everyone</a></li>
+			<li><a href="Controller?action=Admin">Admin</a></li>
+			<li><a href="Controller?action=AllRoles">All Roles</a></li>
 		</ul>
 	</nav>
 </header>
