@@ -8,10 +8,10 @@
         <ul>
             <li><a href="Controller">Home</a></li>
             <li><a href="Controller?action=Everyone">Everyone</a></li>
-            <c:if test="${sessionScope.user.role=='ADMIN' }">
+            <c:if test="${user.role=='ADMIN' }">
                 <li><a href="Controller?action=Admin">Admin</a></li>
             </c:if>
-            <c:if test="${sessionScope.user.role=='ADMIN' || sessionScope.user.role=='CUSTOMER' }">
+            <c:if test="${user.role=='ADMIN' || user.role=='CUSTOMER' }">
                 <li><a href="Controller?action=AllRoles">All Roles</a></li>
             </c:if>
         </ul>

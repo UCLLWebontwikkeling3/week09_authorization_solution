@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AllRoles extends RequestHandler {
     @Override
-    public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
+    public String handleRequest(HttpServletRequest request, HttpServletResponse response) throws NotAuthorizedException{
         Role[] roles = { Role.ADMIN, Role.CUSTOMER };
         Utility.checkRole(request, roles);
         return "allRoles.jsp";

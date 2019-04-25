@@ -9,9 +9,10 @@
     <title>Demo Authorization - Home</title>
 </head>
 <body>
-<%-- <jsp:include page="header.jsp" />
- --%>
+<jsp:include page="header.jsp"/>
+<%--
 <jsp:include page="headerWithAuthorization.jsp"/>
+--%>
 
 <main>
     <h2>Home</h2>
@@ -20,8 +21,8 @@
 
     </c:if>
     <c:choose>
-        <c:when test="${sessionScope.user!=null }">
-            <p>Welcome, ${sessionScope.user.name }</p>
+        <c:when test="${user!=null }">
+            <p>Welcome, ${user.name }</p>
             <form action="Controller?action=LogOut" method="post">
                 <input type="submit" value="Log Out">
             </form>
